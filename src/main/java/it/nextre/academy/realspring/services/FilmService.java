@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -59,11 +60,36 @@ public class FilmService {
             long id = videoteca.stream()
                     .max((f1, f2) -> (int)(f1.getId() - f2.getId())).get().getId();
             f.setId(++id);
+            log.debug(f);
             //ora memorizzo il nuovo film
             videoteca.add(f);
         }else{
             return new Film();
         }
         return f;
+    }
+
+    public Film save(Film f){
+        if(f != null && f.getId() > 0 && f.getTitolo() != null && f.getTitolo().length() > 0) {
+            Optional<Film> v = videoteca.stream()
+                    .filter(f1 -> f1.getId() == f.getId()).findFirst();
+            if (v.isPresent()) {
+                v.get().setAnno(f.getAnno());
+                v.get().setTitolo(f.getTitolo());
+                v.get().setRegista(f.getRegista());
+
+                log.debug(v.get());
+                return v.get();
+            }
+        }
+            return new Film();
+    }
+
+    public boolean delete(Film f){
+        if(f != null && f.getId() > 0) {
+            log.debug("FilmService -> delete() called with film: " + f);
+            return videoteca.removeIf(f1 -> f1.getId() == f.getId());
+        }
+        return false;
     }
 }
