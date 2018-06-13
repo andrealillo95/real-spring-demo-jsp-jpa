@@ -53,4 +53,17 @@ public class FilmService {
                 .filter(f -> f.getRegista().contains(regista))
                 .collect(Collectors.toList());
     }
+
+    public Film add(Film f){
+        if(f != null && f.getId() == 0 && f.getTitolo() != null && f.getTitolo().length() > 0){
+            long id = videoteca.stream()
+                    .max((f1, f2) -> (int)(f1.getId() - f2.getId())).get().getId();
+            f.setId(++id);
+            //ora memorizzo il nuovo film
+            videoteca.add(f);
+        }else{
+            return new Film();
+        }
+        return f;
+    }
 }

@@ -146,3 +146,45 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-06-12 15:18:35.309  INFO 3128 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
 2018-06-12 15:18:35.401  INFO 3128 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
 2018-06-12 15:18:36.755  INFO 3128 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 4.791 seconds (JVM running for 7.8)
+2018-06-13 10:22:44.697  INFO 6368 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-IOJ9II2 with PID 6368 (C:\Academy3\Pr046-realspring\target\classes started by Rivolta Fabio in C:\Academy3\Pr046-realspring)
+2018-06-13 10:22:44.698 DEBUG 6368 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-13 10:22:44.699  INFO 6368 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-13 10:22:47.210  INFO 6368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-13 10:22:47.211  INFO 6368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-13 10:22:47.337  INFO 6368 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-13 10:22:48.797  INFO 6368 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 4.384 seconds (JVM running for 4.952)
+2018-06-13 10:25:25.183  INFO 6368 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 10:25:25.265 DEBUG 6368 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : getAll Film called
+2018-06-13 10:25:25.266 DEBUG 6368 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : FilmService -> getAll() called
+2018-06-13 10:30:25.026  WARN 6368 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-06-13 10:30:25.028  WARN 6368 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+2018-06-13 10:31:45.474  WARN 6368 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-06-13 10:31:45.475  WARN 6368 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+2018-06-13 10:31:51.066  WARN 6368 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-06-13 10:31:51.067  WARN 6368 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+2018-06-13 10:31:59.183  WARN 6368 --- [http-nio-8080-exec-10] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-06-13 10:31:59.184  WARN 6368 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+2018-06-13 10:32:14.043 DEBUG 6368 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : getFilmById Film called
+2018-06-13 10:32:14.044 DEBUG 6368 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : FilmService -> findById() called with id: 2
+2018-06-13 10:34:36.161 DEBUG 6368 --- [http-nio-8080-exec-4] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=null, regista=null, anno=0)
+2018-06-13 10:39:54.379  INFO 16656 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-IOJ9II2 with PID 16656 (C:\Academy3\Pr046-realspring\target\classes started by Rivolta Fabio in C:\Academy3\Pr046-realspring)
+2018-06-13 10:39:54.379 DEBUG 16656 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-13 10:39:54.380  INFO 16656 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-13 10:39:56.763  INFO 16656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-13 10:39:56.765  INFO 16656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-13 10:39:56.892  INFO 16656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-13 10:39:58.275  INFO 16656 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 4.172 seconds (JVM running for 4.693)
+2018-06-13 10:40:26.553  INFO 16656 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 10:40:26.630 DEBUG 16656 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=null, regista=null, anno=0)
+2018-06-13 10:42:46.197 DEBUG 16656 --- [http-nio-8080-exec-5] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=null, regista=null, anno=0)
+2018-06-13 10:47:53.104  INFO 18536 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-IOJ9II2 with PID 18536 (C:\Academy3\Pr046-realspring\target\classes started by Rivolta Fabio in C:\Academy3\Pr046-realspring)
+2018-06-13 10:47:53.105 DEBUG 18536 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-13 10:47:53.105  INFO 18536 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-13 10:47:55.380  INFO 18536 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-13 10:47:55.381  INFO 18536 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-13 10:47:55.500  INFO 18536 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-13 10:47:56.896  INFO 18536 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 4.063 seconds (JVM running for 4.657)
+2018-06-13 10:48:13.877  INFO 18536 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 10:48:13.997 DEBUG 18536 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=lorem ipsum, regista=nextre, anno=2018)
+2018-06-13 10:49:13.672 DEBUG 18536 --- [http-nio-8080-exec-3] i.n.a.r.controllers.FilmController       : getAll Film called
+2018-06-13 10:49:13.673 DEBUG 18536 --- [http-nio-8080-exec-3] i.n.a.r.controllers.FilmController       : FilmService -> getAll() called
