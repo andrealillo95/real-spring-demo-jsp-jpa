@@ -247,3 +247,13 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-06-13 12:08:20.916 DEBUG 2988 --- [http-nio-8080-exec-3] i.n.a.r.controllers.FilmController       : FilmService -> delete() called with film: Film(id=10, titolo=400, regista=boooh, anno=0)
 2018-06-13 12:10:04.801 DEBUG 2988 --- [http-nio-8080-exec-5] i.n.a.r.controllers.FilmController       : getAll Film called
 2018-06-13 12:10:04.802 DEBUG 2988 --- [http-nio-8080-exec-5] i.n.a.r.controllers.FilmController       : FilmService -> getAll() called
+2018-06-13 12:25:58.303  INFO 19776 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-IOJ9II2 with PID 19776 (C:\Academy3\Pr046-realspring\target\classes started by Rivolta Fabio in C:\Academy3\Pr046-realspring)
+2018-06-13 12:25:58.304 DEBUG 19776 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-13 12:25:58.305  INFO 19776 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-13 12:26:00.635  INFO 19776 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-13 12:26:00.637  INFO 19776 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-13 12:26:00.760  INFO 19776 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-13 12:26:02.209  INFO 19776 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 4.167 seconds (JVM running for 4.773)
+2018-06-13 12:27:40.132  INFO 19776 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 12:27:40.220 DEBUG 19776 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : getAll Film called
+2018-06-13 12:27:40.224 DEBUG 19776 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : FilmService -> getAll() called

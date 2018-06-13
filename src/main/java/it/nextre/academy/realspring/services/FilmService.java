@@ -1,5 +1,6 @@
 package it.nextre.academy.realspring.services;
 
+import com.sun.javaws.exceptions.InvalidArgumentException;
 import it.nextre.academy.realspring.controllers.FilmController;
 import it.nextre.academy.realspring.models.Film;
 import org.apache.log4j.Logger;
@@ -55,7 +56,7 @@ public class FilmService {
                 .collect(Collectors.toList());
     }
 
-    public Film add(Film f){
+    public Film add(Film f) throws Exception{
         if(f != null && f.getId() == 0 && f.getTitolo() != null && f.getTitolo().length() > 0){
             long id = videoteca.stream()
                     .max((f1, f2) -> (int)(f1.getId() - f2.getId())).get().getId();
@@ -63,10 +64,10 @@ public class FilmService {
             log.debug(f);
             //ora memorizzo il nuovo film
             videoteca.add(f);
+            return f;
         }else{
-            return new Film();
+            throw new Exception("Malformed film data");
         }
-        return f;
     }
 
     public Film save(Film f){
