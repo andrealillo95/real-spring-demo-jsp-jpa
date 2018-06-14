@@ -224,8 +224,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-06-13 12:04:21.559  INFO 2988 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
 2018-06-13 12:04:22.822  INFO 2988 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 3.949 seconds (JVM running for 4.54)
 2018-06-13 12:04:56.469  INFO 2988 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-06-13 12:04:56.568  WARN 2988 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public boolean it.nextre.academy.realspring.controllers.FilmController.deleteFilm(it.nextre.academy.realspring.models.Film,long)
-2018-06-13 12:04:56.571  WARN 2988 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public boolean it.nextre.academy.realspring.controllers.FilmController.deleteFilm(it.nextre.academy.realspring.models.Film,long)
+2018-06-13 12:04:56.568  WARN 2988 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public boolean it.nextre.academy.realspring.controllers.FilmController.deleteFilm(it.nextre.academy.realspring.entities.Film,long)
+2018-06-13 12:04:56.571  WARN 2988 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public boolean it.nextre.academy.realspring.controllers.FilmController.deleteFilm(it.nextre.academy.realspring.entities.Film,long)
 2018-06-13 12:06:39.807  WARN 2988 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
  at [Source: java.io.PushbackInputStream@77618fd6; line: 3, column: 3]
 2018-06-13 12:06:39.808  WARN 2988 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
@@ -257,3 +257,54 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-06-13 12:27:40.132  INFO 19776 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2018-06-13 12:27:40.220 DEBUG 19776 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : getAll Film called
 2018-06-13 12:27:40.224 DEBUG 19776 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : FilmService -> getAll() called
+2018-06-14 10:50:36.701  INFO 22484 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-IOJ9II2 with PID 22484 (C:\Academy3\Pr046-realspring\target\classes started by Rivolta Fabio in C:\Academy3\Pr046-realspring)
+2018-06-14 10:50:36.702 DEBUG 22484 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-14 10:50:36.703  INFO 22484 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-14 10:50:39.711  INFO 22484 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-14 10:50:39.712  INFO 22484 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-14 10:50:39.863  INFO 22484 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-14 10:50:40.573  INFO 22484 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-14 10:50:40.657  INFO 22484 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-14 10:50:40.659  INFO 22484 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-14 10:50:40.661  INFO 22484 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-14 10:50:40.724  INFO 22484 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-14 10:50:40.939  INFO 22484 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-06-14 10:50:41.153  INFO 22484 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-06-14 10:50:42.763  INFO 22484 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 6.374 seconds (JVM running for 7.014)
+2018-06-14 12:42:06.009  INFO 22484 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-14 14:17:36.992  INFO 13488 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-IOJ9II2 with PID 13488 (C:\Academy3\Pr046-realspring\target\classes started by Rivolta Fabio in C:\Academy3\Pr046-realspring)
+2018-06-14 14:17:36.993 DEBUG 13488 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-14 14:17:36.993  INFO 13488 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-14 14:17:40.197  INFO 13488 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-14 14:17:40.199  INFO 13488 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-14 14:17:40.341  INFO 13488 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-14 14:17:41.116  INFO 13488 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-14 14:17:41.221  INFO 13488 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-14 14:17:41.223  INFO 13488 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-14 14:17:41.227  INFO 13488 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-14 14:17:41.306  INFO 13488 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-14 14:17:41.539  INFO 13488 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-06-14 14:17:41.933  INFO 13488 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-06-14 14:17:41.948  INFO 13488 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: film
+2018-06-14 14:17:41.949  INFO 13488 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: film
+2018-06-14 14:17:42.067  WARN 13488 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'filmController': Unsatisfied dependency expressed through field 'filmService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'it.nextre.academy.realspring.services.FilmService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=mockFilm)}
+2018-06-14 14:17:42.077  INFO 13488 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-06-14 14:17:42.281 ERROR 13488 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field filmService in it.nextre.academy.realspring.controllers.FilmController required a bean of type 'it.nextre.academy.realspring.services.FilmService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'it.nextre.academy.realspring.services.FilmService' in your configuration.
+

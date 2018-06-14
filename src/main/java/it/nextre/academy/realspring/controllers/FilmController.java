@@ -1,23 +1,23 @@
 package it.nextre.academy.realspring.controllers;
 
-import com.sun.javaws.exceptions.InvalidArgumentException;
-import it.nextre.academy.realspring.models.Film;
+import it.nextre.academy.realspring.entities.Film;
 import it.nextre.academy.realspring.services.FilmService;
 import it.nextre.academy.realspring.utils.ResponseHelper;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+
 
 @RestController   //serve per estrarre dati in formato json
 @RequestMapping("/film")
 public class FilmController {
 
-    @Autowired    //cerca il filmService all'interno della sua libreria
-            FilmService filmService;
+    @Autowired
+    @Qualifier("mockFilm")
+    FilmService filmService;
 
     @Autowired
     ResponseHelper responseHelper;
