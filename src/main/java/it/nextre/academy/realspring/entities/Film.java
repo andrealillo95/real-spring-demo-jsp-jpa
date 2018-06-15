@@ -3,6 +3,8 @@ package it.nextre.academy.realspring.entities;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -27,7 +29,9 @@ public class Film {
     private String regista;
 
     @Column(length = 4)
-    @Size(min = 1870,max = 2300, message = "Anno non valido")
+    //@Size(min = 1870,max = 2300, message = "Anno non valido")
+    @Min(1870)
+    @Max(2300)
     private int anno;
 
 }

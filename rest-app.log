@@ -308,3 +308,35 @@ Action:
 
 Consider defining a bean of type 'it.nextre.academy.realspring.services.FilmService' in your configuration.
 
+2018-06-14 14:30:31.378  INFO 20272 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-IOJ9II2 with PID 20272 (C:\Academy3\Pr046-realspring\target\classes started by Rivolta Fabio in C:\Academy3\Pr046-realspring)
+2018-06-14 14:30:31.379 DEBUG 20272 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-14 14:30:31.380  INFO 20272 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-14 14:30:34.781  INFO 20272 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-14 14:30:34.782  INFO 20272 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-14 14:30:34.910  INFO 20272 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-14 14:30:35.674  INFO 20272 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-14 14:30:35.768  INFO 20272 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-14 14:30:35.770  INFO 20272 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-14 14:30:35.772  INFO 20272 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-14 14:30:35.867  INFO 20272 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-14 14:30:36.057  INFO 20272 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-06-14 14:30:36.676  INFO 20272 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-06-14 14:30:39.911  INFO 20272 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 8.861 seconds (JVM running for 9.588)
+2018-06-14 15:15:11.375  INFO 16352 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-IOJ9II2 with PID 16352 (C:\Academy3\Pr046-realspring\target\classes started by Rivolta Fabio in C:\Academy3\Pr046-realspring)
+2018-06-14 15:15:11.376 DEBUG 16352 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-14 15:15:11.376  INFO 16352 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-14 15:15:14.297  INFO 16352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-14 15:15:14.299  INFO 16352 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-14 15:15:14.454  INFO 16352 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-14 15:15:15.123  INFO 16352 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-14 15:15:15.198  INFO 16352 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-14 15:15:15.200  INFO 16352 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-14 15:15:15.201  INFO 16352 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-14 15:15:15.251  INFO 16352 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-14 15:15:15.465  INFO 16352 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-06-14 15:15:15.848  INFO 16352 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-06-14 15:15:17.618  INFO 16352 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 6.551 seconds (JVM running for 7.238)
