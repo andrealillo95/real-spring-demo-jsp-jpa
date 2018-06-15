@@ -49,6 +49,7 @@ public class FilmServiceImpl implements FilmService {
 
     public Film add(Film f) throws Exception {
         if (f != null && f.getId() == 0 && f.getTitolo() != null && f.getTitolo().length() > 0) {
+            System.out.println("aggiungo" + f);
             Film tmp = filmRepository.save(f);
             log.debug(tmp);
             return tmp;

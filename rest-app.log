@@ -340,3 +340,50 @@ Consider defining a bean of type 'it.nextre.academy.realspring.services.FilmServ
 2018-06-14 15:15:15.465  INFO 16352 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 2018-06-14 15:15:15.848  INFO 16352 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-06-14 15:15:17.618  INFO 16352 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 6.551 seconds (JVM running for 7.238)
+2018-06-15 10:15:26.359  INFO 19040 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-IOJ9II2 with PID 19040 (C:\Academy3\Pr046-realspring\target\classes started by Rivolta Fabio in C:\Academy3\Pr046-realspring)
+2018-06-15 10:15:26.360 DEBUG 19040 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-15 10:15:26.360  INFO 19040 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-15 10:15:29.184  INFO 19040 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-15 10:15:29.185  INFO 19040 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-15 10:15:29.328  INFO 19040 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-15 10:15:30.001  INFO 19040 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-15 10:15:30.106  INFO 19040 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-15 10:15:30.108  INFO 19040 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-15 10:15:30.111  INFO 19040 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-15 10:15:30.171  INFO 19040 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-15 10:15:30.389  INFO 19040 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-06-15 10:15:30.842  INFO 19040 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-06-15 10:15:32.666  INFO 19040 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 6.603 seconds (JVM running for 7.213)
+2018-06-15 10:16:27.909  INFO 19040 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-15 10:16:27.967 DEBUG 19040 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : getAll Film called
+2018-06-15 10:16:27.968 DEBUG 19040 --- [http-nio-8080-exec-2] i.n.a.r.controllers.FilmController       : FilmService -> getAll() called
+2018-06-15 10:16:28.001  INFO 19040 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-15 10:17:34.812 DEBUG 19040 --- [http-nio-8080-exec-5] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=1, titolo=null, regista=null, anno=1990)
+2018-06-15 10:18:14.205 DEBUG 19040 --- [http-nio-8080-exec-7] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=1, titolo=null, regista=null, anno=0)
+2018-06-15 10:20:48.720 DEBUG 19040 --- [http-nio-8080-exec-9] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=1, titolo=American Pie 1, regista=null, anno=0)
+2018-06-15 10:21:15.846 DEBUG 19040 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=1, titolo=American Pie 1, regista=boooh, anno=1990)
+2018-06-15 10:21:59.108  WARN 19040 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : Request method 'PUT' not supported
+2018-06-15 10:21:59.109  WARN 19040 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported
+2018-06-15 10:22:23.176 DEBUG 19040 --- [http-nio-8080-exec-4] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=1, titolo=American Pie 1, regista=boooh, anno=1990)
+2018-06-15 10:23:20.891 DEBUG 19040 --- [http-nio-8080-exec-6] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=1, titolo=American Pie 1, regista=boooh, anno=1990)
+2018-06-15 10:28:03.737  INFO 1540 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Starting RealspringApplication on DESKTOP-IOJ9II2 with PID 1540 (C:\Academy3\Pr046-realspring\target\classes started by Rivolta Fabio in C:\Academy3\Pr046-realspring)
+2018-06-15 10:28:03.738 DEBUG 1540 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Running with Spring Boot v1.5.13.RELEASE, Spring v4.3.17.RELEASE
+2018-06-15 10:28:03.739  INFO 1540 --- [restartedMain] i.n.a.realspring.RealspringApplication   : No active profile set, falling back to default profiles: default
+2018-06-15 10:28:06.884  INFO 1540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-15 10:28:06.885  INFO 1540 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-15 10:28:07.020  INFO 1540 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-15 10:28:07.687  INFO 1540 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-15 10:28:07.763  INFO 1540 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-15 10:28:07.765  INFO 1540 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-15 10:28:07.766  INFO 1540 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-15 10:28:07.831  INFO 1540 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-15 10:28:08.017  INFO 1540 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-06-15 10:28:08.446  INFO 1540 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-06-15 10:28:10.343  INFO 1540 --- [restartedMain] i.n.a.realspring.RealspringApplication   : Started RealspringApplication in 6.929 seconds (JVM running for 7.446)
+2018-06-15 10:28:19.646  INFO 1540 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-15 10:28:19.770 DEBUG 1540 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : addFilm() called with film: Film(id=0, titolo=American Pie 1, regista=boooh, anno=1990)
+2018-06-15 10:28:19.879 DEBUG 1540 --- [http-nio-8080-exec-1] i.n.a.r.controllers.FilmController       : Film(id=1, titolo=American Pie 1, regista=boooh, anno=1990)
