@@ -1,6 +1,6 @@
 package it.nextre.academy.realspring.services.impl;
 
-import it.nextre.academy.realspring.controllers.FilmController;
+import it.nextre.academy.realspring.controllers.api.FilmController;
 import it.nextre.academy.realspring.entities.Film;
 import it.nextre.academy.realspring.repositories.FilmRepository;
 import it.nextre.academy.realspring.services.FilmService;
@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
